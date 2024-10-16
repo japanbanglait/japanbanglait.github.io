@@ -5,4 +5,13 @@
 .custombg{
     background-color: #1E3A8A;
 }
+.text-yellow-300{
+    color:yellow;
+    text-decoration: none;
+}
 
+.section-title{
+    color:rgb(56, 56, 152);
+    font-weight: 400;
+    
+}
