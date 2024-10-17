@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Outdoors</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom Styles */
+        .announcement {
+            background-color: #ff4e4e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #000;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .hero {
+            background: url('see.avif');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position:center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn-primary {
+            padding: 10px 20px;
+            font-size: 1.1rem;
+        }
+
+        .support-section {
+            padding: 60px 0;
+        }
+
+        .support-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .support-box {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 40px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .support-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .support-box p {
+            font-size: 1rem;
+        }
+
+        .support-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .covid-section {
+            background-color: #f1f1f1;
+            padding: 60px 0;
+        }
+
+        .covid-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .covid-section p {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        <p>How we're responding to COVID-19</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Acme</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Serving you since 1989.</h1>
+            <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.</p>
+            <a href="#" class="btn btn-primary">Shop Merch</a>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section text-center">
+        <div class="container">
+            <h2>Support Acme Outdoors</h2>
+            <p>COVID-19 has forced us to close our retail space, but we need support more than ever to help us through this season.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="support-box">
+                        <h3>Shop Products</h3>
+                        <p>Our full product line is still available online for purchase. You can also purchase gift cards.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-box">
+                        <h3>Donate</h3>
+                        <p>Support us through donations to help us operate during these times.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-box">
+                        <h3>Buy Gift Cards</h3>
+                        <p>Buy gift cards to use later or share with friends and family.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COVID-19 Section -->
+    <section class="covid-section text-center">
+        <div class="container">
+            <h2>How we're keeping you safe during COVID-19</h2>
+            <p>As an outdoor shop, we take precautions to ensure the safety of our customers and team members.</p>
+            <a href="#" class="btn btn-dark">Read Our Statement</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Shop Products | Open 24/7/365.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
