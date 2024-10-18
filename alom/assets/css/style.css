@@ -1,0 +1,58 @@
+*{
+    margin:0;
+}
+
+.main{
+    background-color: #dbdcdf;
+}
+
+.custombg{
+    background-color: #1E3A8A;
+}
+.text-yellow-300{
+    color:yellow;
+    text-decoration: none;
+}
+
+.section-title{
+    color:rgb(56, 56, 152);
+    font-weight: 400;
+    
+}
+.frmwt{
+    width:50%;
+    height:auto;
+}
+.bg-blue-900{
+    background-color: #2549ad;
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
