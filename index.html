@@ -19,6 +19,10 @@
     <h1>shakib</h1>
     <h1>Hello, Test!</h1>
     <h1 id="commit_test"></h1>
+    <button onclick="findDatatype(6,7)">alert my data type</button>
+    <br>
+    number of hand is <span id="demohand">0</span>
+    <button ondblclick="getNumberOfHand()" class="btn btn-primary">get number of hand plez double click</button>
     <h1>nafi</h1>
     <h2>faravi</h2>
     <h>sabbir</h>
@@ -40,20 +44,50 @@
       let a, b, c;
       // How to use variables:
       a = 5;
-      b = 6;
-      c = b * a;
-      console.log(c);
-      //start variable writing here
-      var sumA = 10;//local variable
-      let sumB = 15; //block scope variable
-      const sumC = 55; //constant 
-      console.log("var example first",sumA);
-      console.log("example let first",sumB);
-      sumA = 111;
-      sumB = 150;
-      window.alert("var example"+sumA);
-      window.alert("example let"+sumB);
-      window.alert("example const"+sumC);
+      a -= 3;
+      let testStr = "hello world";//string;
+      console.log(testStr.toUpperCase());
+      let testcombine = `sdfsdf
+      sdfsdf
+      sdfsdf`;//string
+      let testa = 6//floating or dece
+      let testb = 9;//number or int
+      let testD = false;
+      let humanBody = {
+        eye:2,
+        mouth:1,
+        leg:2,
+        hand:2,
+        eyeOpen:()=>{
+          return "open your eyes";
+        },
+        eyeClose:()=>{
+          return "close your eyes";
+        },
+      }
+
+
+     let {eye, mouth, leg, hand} = humanBody;//distructure
+      console.log("handddddddd>>>>",hand);
+      let testt = "dfgsd fgsfg sfg sdfg sfgsdf gsdf";
+     function getNumberOfHand(){
+      console.log("hhhhhhhhhhhh>>>>",hand);
+
+      document.getElementById("demohand").innerHTML = testStr.length;
+     }
+
+
+
+     console.log("number of eye is ",eye);
+     console.log("number of mouth is ",mouth);
+     console.log("number of leg is ",leg);
+    </script>
+    <script>
+      console.log("dddddd",demo);
+    </script>
+    <script>
+      
+      let demo = "demo data";
     </script>
     </body>
 </html>
