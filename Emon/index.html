@@ -63,52 +63,48 @@
 
         <!--Conditional Statement-->
 
-        <p><b>Script for if condition:</b></p>
+        <!--<p><b>Script for if condition:</b></p>
         <p id="ifcon"></p>
         <p><b>Script for if+and condition:</b></p>
         <p id="ifandcon"></p>
         <p><b>Script for if/else condition:</b></p>
         <p id="ifelsecon"></p>
-        <!--Single value if Condition-->
+        <--Single value if Condition-->
         <script>
           let age = 22;
-          if (age > 18) {
-            document.getElementById("ifcon").innerHTML = "You are an adult";
-          }
+          if (age > 18) 
+            console.log("You are an adult");
+          
         </script>
         <!--Double value if Condition-->
         <script>
           let district = "Dhaka";
           let zipcode = 1000;
-          if (zipcode == 1000 && district == "Dhaka") {
-            document.getElementById("ifandcon").innerHTML = "You can apply in Dhaka City Corporation";
-            //ReferenceError: wanted to get it into consol but it says "consol is not defined"
-          }
+          if (zipcode == 1000 && district == "Dhaka") 
+            console.log("You can apply in Dhaka City Corporation");
         </script>
+        
         <script>
-          let marks = 70;
-          if (marks >= 33) {
-            document.getElementById("ifelsecon").innerHTML = "Your result is D";
-          }
-          else if (marks > 33 && marks < 50) {
-            document.getElementById("ifelsecon").innerHTML = "Your result is C";
-          }
-          else if (marks >= 50 && marks < 60) {
-            document.getElementById("ifelsecon").innerHTML = "Your result is B";
-          }
-          else if (marks >= 60 && marks < 70) {
-            document.getElementById("ifelsecon").innerHTML = "Your result is A-";
-          }
-          else if (marks >= 70 && marks < 80) {
-            document.getElementById("ifelsecon").innerHTML = "Your result is A";
-          }
-          else if (marks >= 80) {
-            document.getElementById("ifelsecon").innerHTML = "Your result is A+";
-          }
-          else {
-            document.getElementById("ifelsecon").innerHTML = "Your result is F";
-            //ReferenceError: wanted to get it into consol but it says "consol is not defined"
-          }
+          let marks = 85;
+          if (marks < 33) 
+            console.log("Your result is F");
+          
+          else if (marks >= 33 && marks < 40) 
+            console.log("Your result is D");
+          
+          else if (marks >= 40 && marks < 50) 
+            console.log("Your result is C");
+          
+          else if (marks >= 50 && marks < 60) 
+            console.log("Your result is B");
+          
+          else if (marks >= 60 && marks < 70) 
+            console.log("Your result is A-");
+          
+          else if (marks >= 70 && marks < 80) 
+            console.log("Your result is A");          
+          else 
+            console.log("Your result is A+");
         </script>
       </div>
     </div>
