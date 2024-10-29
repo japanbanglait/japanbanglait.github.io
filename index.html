@@ -26,6 +26,14 @@
     <h1>nafi</h1>
     <h2>faravi</h2>
     <h>sabbir</h>
+    <hr>
+    <br>
+    <div class="container">
+      <div class="row" id="productItemList">
+Products list will be here
+
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
       //conditional statement has been turn off block comm
@@ -180,7 +188,7 @@ for(let i=0; i<sveneEleven.length; i++){
 let sum = (a,b) => "its okay";
 
 document.getElementById("demo").innerHTML = sum(4,6);
-let myproductList = {
+let data = {
   "products": [
     {
       "id": 1,
@@ -739,6 +747,46 @@ let myproductList = {
   "skip": 0,
   "limit": 30
 }
+
+let testObjec = {
+      "id": 30,
+      "title": "Key Holder",
+      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
+      "price": 30,
+      "discountPercentage": 2.92,
+      "rating": 4.92,
+      "stock": 54,
+      "brand": "Golden",
+      "category": "home-decoration",
+      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/30/1.jpg",
+        "https://i.dummyjson.com/data/products/30/2.jpg",
+        "https://i.dummyjson.com/data/products/30/3.jpg",
+        "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
+      ]
+}
+let blankProductListHtml = "";
+let productsItems = data.products;
+// console.log("productsItems",productsItems);
+// console.log("productsItems lenght",productsItems.length);
+console.log("5number product", productsItems[5])
+for(let i=0;i<productsItems.length; i++){
+  // console.log(`product is ${i}`,productsItems[i].brna);
+}
+
+productsItems.forEach((value,index)=>{
+  console.log("print from forech the product brand is", value.brand);
+  blankProductListHtml += `
+    <div class="col-md-3">
+      <h4>${value.brand}</h4>
+      <img src="${value.thumbnail}"/>
+      <p>${value.description}</p>  
+    </div>
+  `;
+});
+document.getElementById("productItemList").innerHTML = blankProductListHtml;
+
 
     </script>
     
