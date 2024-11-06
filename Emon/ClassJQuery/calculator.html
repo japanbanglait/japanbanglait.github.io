@@ -44,7 +44,9 @@
                 <p class="text-center text-white">বিয়োগ</p>
             </div>
         </div>
-        
+        <div class="addbtnCol col-sm-1 text-center">
+            <button id="addButton" class="addBtn"> + </button>
+        </div>
         <div class="inputFields row">
             <div class="ownerNameCol col-sm-5">
                 <input type="text" id="ownerName" name="ownerName" size="30" Class="ownerName" placeholder="মালিকের নাম" required/>
@@ -137,13 +139,18 @@
                     <option value="১৯"></option>
                 </datalist>
             </div>
-            <div class="addbtnCol col-sm-1 text-center">
-                <button id="addButton" class="addBtn" onclick="addExtraRow()"> + </button>
-            </div>
+           
             <div class="delbtnCol col-sm-1 text-center">
                 <button id="delButton" class="delBtn"> x </button>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <div class="cloneHtml row">
+            
+        </div>
+        <br>
         <br>
         
         <!-- <script> -->
@@ -257,7 +264,8 @@
                 $(".inputFieldsExtra").hide();
               });
               $("#addButton").click(function(){
-                $(".inputFieldsExtra").show();
+                let rowHtml = $(".inputFields").html();
+                $(".cloneHtml").append(rowHtml);//
               });
             });
         </script>
